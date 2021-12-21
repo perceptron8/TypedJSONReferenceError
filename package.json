@@ -1,0 +1,19 @@
+{
+	"name": "TypedJSONReferenceError",
+	"version": "1.0.0",
+	"private": true,
+	"type": "module",
+	"dependencies": {
+		"reflect-metadata": "^0.1.13",
+		"typedjson": "^1.8.0"
+	},
+	"devDependencies": {
+		"@types/jasmine": "^3.10.2",
+		"jasmine": "^3.10.0",
+		"ts-node": "^10.4.0",
+		"typescript": "~4.5.4"
+	},
+	"scripts": {
+		"test": "JASMINE_CONFIG_PATH=jasmine.json node --loader ts-node/esm --experimental-specifier-resolution=node node_modules/jasmine/bin/jasmine.js spec/**/*.spec.ts"
+	}
+}
